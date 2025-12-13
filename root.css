@@ -1,0 +1,655 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+:root {
+    --font-main: 'Philosopher', sans-serif;
+    --font-title: 'Georgia', serif;
+    
+    --h1: 300 36px/1.2 var(--font-main);
+    --h2: 600 26px/1.3 var(--font-title);
+}
+
+h1 { font: var(--h1); }
+h2 { font: var(--h2); }
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.header-wrapper{
+    max-width: 1440px;
+    display: flex;
+    align-items: baseline; 
+    justify-content: space-between; 
+    padding: 0 125px; 
+}
+
+.header-nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    font-size: 25px;
+    text-wrap: nowrap;
+}
+.header-nav a{
+    text-decoration: none;
+    color: #333333;
+}
+.logo{
+    display: flex;
+    align-items: baseline;
+    font-size: 25px;
+    gap: 23px;
+}
+
+.logo img{
+    width: 45px; 
+    height: 45px;
+}
+
+.timer-sale-wrapper {
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    height: 80px;
+    gap: 50px;
+    align-items: center;
+    background-color: #c66f80;
+    color: #ffffff;
+}
+.countsale {
+    display: flex;
+    gap: 40px;
+    color: #ffffff;
+    justify-content: center;
+    align-items: center;
+}
+.time-sale {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pageslinks{
+    max-width: 1440px;
+    height: 60px;
+    background-color: #FFC7D4;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+}
+
+.pageslinks a{
+    text-decoration: none;
+    color: #333333;
+}
+.mainwindow {
+    position: relative;
+    width: 100%;
+    height: 580px;
+    overflow: hidden;
+}
+
+.mainwindow img {
+    width: 1440px; 
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.maintext {
+    position: absolute;
+    margin-top: 186px;
+    margin-left: 400px;
+    z-index: 1; 
+    color: white; 
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+.deliverytext{
+    font-size: 80px;
+}
+
+.town{
+    font-size: 75px;
+}
+
+.searchstring{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 90px;
+}
+
+.phone{
+    display: flex;
+    margin-left: 125px;
+}
+.searchstring {
+    display: flex;
+    gap: 20px;
+}
+.searchinput{
+    width: 453px;
+    height: 45px;
+    border: #333333 2px solid;
+    margin-left: 55px;
+}
+.icons{
+    display: flex;
+    margin-left: 50px;
+    gap: 20px;
+}
+.icons img{
+    width: 45px;
+    height: auto;
+
+}
+.aboutus{
+    margin-left: 125px;
+
+}
+
+.columnsabout{
+    display: flex;
+}
+
+.columnfirst{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    font-weight: 400;
+    text-align: justify;
+    width: 440px;
+    height: 286px;
+}
+
+.columnsecond{
+    margin-top: 50px;margin-left: 250px;
+    display: flex;
+    flex-direction: column;
+    font-weight: 400;
+    text-align: justify;
+    width: 440px;
+    height: 286px;
+}
+
+.subscribtion {
+    position: relative;
+    margin-bottom: 200px;
+}
+
+.subscribtion h1{
+    margin-bottom: 50px;
+    margin-left: 40%;
+}
+
+.aboutsubscription {
+    background-color: #CFE8CD;
+    width: 100%;  
+    height: 500px;
+    box-sizing: border-box; 
+    position: relative;
+    padding: 3px 0 0 0;
+}
+
+.aboutsubscription-text {
+    font-weight: 400;
+    text-align: justify;
+    margin: 0 0 30px 0; 
+    padding: 0 190px;
+    position: absolute;
+    margin-top: 50px;
+    z-index: 4;
+}
+
+.bgsubscription {
+    width: 1000px;
+    height: 450px;
+    position: relative; 
+    margin: 150px auto 0; 
+    z-index: 2;
+    display: block; 
+}
+
+.inputs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 35px;
+    width: 100%;
+    max-width: 800px;
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 3;
+}
+
+.inputs input {
+    width: 100%;
+    background: transparent;
+    height: 50px;
+    padding: 0px 10px;
+    border: #ffffff 2px solid;
+    box-sizing: border-box;
+    color: #FFC7D4;
+}
+
+.chastotadelivery, .kolvo {
+    grid-row: 1;
+}
+
+.chastotadelivery {
+    grid-column: 1;
+}
+
+.kolvo {
+    grid-column: 2;
+}
+
+/* Третий инпут занимает всю вторую строку */
+.adres {
+    grid-column: 1 / span 2; 
+    grid-row: 2;
+}
+.sub-btn{
+    width: 400px;
+    height: 55px;
+    background-color: #FFC7D4; color: #333333;
+    font-family: 'Philosopher', sans-serif;
+    font-size: 20px;
+    border: #333333 solid 2px;
+    cursor: pointer;
+}
+
+.price{
+    font: 'Philosopher';
+    font-size: 45px;
+    color: #FFC7D4;
+}
+.errors-of-sub {
+    margin: 15px 0;
+}
+
+.error-message {
+    background-color: #ffebee;
+    color: #c62828;
+    padding: 10px;
+    margin: 5px 0;
+    border-left: 4px solid #c62828;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+.input-error {
+    border: 2px solid #c62828 !important;
+    background-color: #ffebee;
+}
+
+.success-message {
+    background-color: #e8f5e9;
+    color: #2e7d32;
+    padding: 10px;
+    margin: 5px 0;
+    border-left: 4px solid #2e7d32;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+.marquee-container {
+    width: 100%;
+    overflow: hidden;
+    background: #f0f0f0;
+    margin-top: 50px;
+    padding: 0; 
+    display: flex;
+    align-items: center; 
+    height: 70px; 
+    
+}
+
+.hityrun {
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    gap: 90px;
+    padding: 15px 0; 
+    width: max-content;
+}
+
+.hityrun span {
+    white-space: nowrap;
+    font-size: 24px;
+    margin: 0;
+    line-height: 1; 
+    animation:marquee-container 1s linear infinite ;
+    flex-shrink: 0;
+}
+
+@keyframes marquee-container{
+    100%{
+        transform: translateX(50%);
+    }
+}
+
+.cards {
+    display: flex;
+    flex-direction: row; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    align-items: flex-start; 
+    gap: 50px;
+    width: 100%;
+    margin-top: 50px;margin-bottom: 50px;
+}
+
+.productcard {
+    background-color: #FFC7D4;
+    width: 278px;
+    padding: 0;
+    overflow: hidden;
+}
+
+.cards img {
+    width: 100%;
+    height: 265px;
+    object-fit: cover;
+    display: block;
+}
+
+.productcard h3{
+    padding: 12px 93px;
+}
+.productinfo {
+    width: 278px;
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+}
+.buttonssize {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between; 
+    width: 100%; 
+    margin-top: -5px;margin-bottom: 23px;
+}
+
+.buttonssize button{
+    flex: 1; 
+    max-width: 93px; 
+    height: 22px;
+    margin: 0px; 
+    background-color: #333333;
+    color: #CFE8CD;
+    border: none;
+    cursor: pointer;
+}
+.buttonsactions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    padding: 0px 0px 20px 0px;
+}
+.liketoward, .addtocart {
+    width: 40px; height: 40px;
+    background-color: #333333;
+    color: #CFE8CD;
+    border: none;
+    font-size: 32px;
+    cursor: pointer;
+}
+.more {
+    background: transparent;
+    border: #333333 2px solid;
+    font-size: 18px;
+    padding: 7px 25px;
+}
+
+.another {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 50px;
+}
+
+.another img{
+   width: 150px; height: 50px;
+}
+.another a {
+    text-decoration: none;
+    font-family: 'Philosopher', sans-serif;
+    color: #333333;
+    font-size: 28px;
+}
+.faq{
+    margin-left: 125px;
+    width: 55%;
+}
+.faq details{
+    border-bottom: 3px solid #333333;
+    transition: all 0.3s ease; /* добавляем плавность */
+}
+.faq h1{
+    margin-bottom: 50px;
+}
+.faq details summary{
+    display: flex;
+    font-size: 26px;
+    color: #666666;
+    line-height: 133%;
+    cursor: pointer;
+    padding: 20px 0;
+    justify-content: space-between;
+    align-items: center; /* выравниваем по центру */
+    -webkit-tap-highlight-color: transparent; 
+    list-style: none; /* убираем стандартный маркер */
+    position: relative; /* для псевдоэлемента */
+}
+
+/* Убираем стандартный маркер полностью */
+.faq details summary::-webkit-details-marker {
+    display: none;
+}
+
+.faq details summary::after{
+    content: '+';
+    font-size: 36px;
+    font-weight: 300;
+    transition: transform 0.3s ease;
+    margin-left: 20px; /* отступ от текста */
+    flex-shrink: 0; /* запрещаем сжатие */
+}
+
+.faq details[open] summary::after{
+    transform: rotate(45deg);
+    content: '+'; /* оставляем плюс, но повернутый */
+}
+
+.faq details[open] summary{
+    color: #C33F63;
+    font-weight: 600;
+}
+
+.faq details p{
+    font-size: 26px;
+    line-height: 150%;
+    color: #333333;
+    padding: 0 0 20px 0;
+    margin: 0;
+    animation: fadeIn 0.3s ease; /* анимация появления текста */
+}
+
+.contacts{
+    margin-top: 50px;
+    margin-left: 125px;
+    margin-bottom: 50px;
+}
+.columns{
+    display: flex;
+    
+}
+.grafic {
+    margin-top: 50px;
+}
+.contactcolumnleft{
+    margin-top: 70px;
+}
+.socialnets{
+    margin-bottom: 50px;
+}
+.contactcolumnright{
+    margin-left: 303px;
+    position: relative;
+    margin-top: 70px;
+}
+.contactcolumnright h2{
+    margin-bottom: 50px;
+}
+.contactcolumnright textarea{
+    width: 494px; 
+    height: 310px;
+    border: #333333 solid 2px;
+    box-sizing: border-box;
+    padding: 20px;
+    font-size: 16px;
+    font-family: 'Philosopher',sans-serif;
+    resize: none; 
+}
+.phonecall{
+    display: flex;
+}
+.phonecall img{
+    width: 45px;
+}
+.input-btns{
+    display: flex;
+    gap: 98px;
+    margin-left: 18px;margin-top: -70px;
+}
+
+.input-btns button{
+    width: 182px; 
+    height: 45px;
+}
+.clear-btn{
+    background-color: #333333;
+    border: none;
+    color: #CFE8CD;
+    font-size: 24px;
+    font-family: 'Philosopher',sans-serif;
+    cursor: pointer;    
+}
+
+.send-btn{
+    background-color: #FFC7D4;
+    border: none;
+    color: #333333;
+    font-size: 24px;
+    font-family: 'Philosopher',sans-serif;
+    cursor: pointer;     
+}
+
+.navigation{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-left: 125px;
+}
+
+.basemant{
+    background-color: #CFE8CD;
+    padding: 20px 0 0 0 ;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    margin-left: 125px;
+    margin-bottom: 50px;
+}
+.logo img{
+    width: 80px; height: auto;
+}
+.columns-basemant{
+    display: flex;
+    gap: 50px;
+}
+.columns-basemant a{
+    text-decoration: none;
+    color: #333333;
+}
+.socialnets{
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+}
+.official{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 125px;padding-right: 125px;
+}
+.cookie-notice { /* Одна "c" */
+    background-color: #333333;
+    color: #FFC7D4;
+    position: fixed;
+    left: 30%;
+    bottom: 10px;
+    width: 35%;
+    height: 100px;
+    z-index: 10;
+    font-size: 14px;
+    transform: translateY(150%);
+    transition: transform 0.3s ease;
+    border-radius: 8px;
+}
+
+.cookie-notice.is_show { /* Одна "c" */
+    transform: translateY(0);
+}
+
+.cookie-alert__container { /* Одна "c" */
+    align-items: center;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.cookie-alert_left { /* Одна "c" */
+    padding-right: 50px;
+    flex: 1;
+}
+
+.cookie-alert_left p {
+    margin: 0 0 10px 0;
+}
+
+.cookie-alert_left a {
+    color: #FFC7D4;
+    text-decoration: underline;
+}
+
+.cookie-alert_right button {
+    background-color: #FFC7D4;
+    color: #333333;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    white-space: nowrap;
+}
