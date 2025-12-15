@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Корзина товаров</title>
+    <link rel="stylesheet" href="./cart.css">
+</head>
+<body>
+    <header>
+        <div class="header-wrapper">
+            <div class="logo">
+                <img src="/img/logotip.png" alt="Logotip">
+                <span>Анютин сад</span>
+            </div>
+            <div class="header-nav">
+                <div class="about" id="about">О нас</div>
+                <div class="hits" id="hits">Хиты продаж</div>
+                <div class="faq" id="faq">Faq</div>
+                <div class="contacts" id="contacts">Контакты</div>
+            </div>
+        </div>
+        <div class="pageslinks">
+            <a href="#about">Корзина товаров</a>
+        </div>
+    </header>
+    <section class="header-btn">
+        <div class="choose-adres">
+            <div class="address-dropdown">
+                <button class="dropdown-btn" id="dropdownBtn">
+                    <img src="./img/map-icon.png" alt="adres"> 
+                    <span class="dropdown-text">Выберите адрес доставки</span>
+                    <span class="dropdown-arrow">▼</span>
+                    <span class="add-address">+</span>
+                </button>
+                <div class="dropdown-content" id="dropdownContent">
+                    <div class="dropdown-item" data-value="1">г.Минск, ул.Клары Цеткиной,д 45</div>
+                    <div class="dropdown-item" data-value="2">г.Минск, ул.Фрунзенская ,д 25</div>
+                    <div class="dropdown-item" data-value="3">г.Минск, ул.Клары Цеткиной,д 45</div>
+                </div>
+            </div>
+            
+            <div class="liked-towards">
+                <button class="liked-btn">
+                    <img src="./img/heart-icon.png" alt="liked"> 
+                    <span>мои избранные товары</span>
+                </button>
+            </div>
+        </div>
+        <img src="" alt="accaunt" class="accaunt">
+    </section>
+    <div id="products" class="products-grid">
+    </div>
+        <footer class="basemant">
+        <div class="logo">
+            <img src="./img/logotip.png" alt="Logo">
+            <span><h1>Анютин сад</h1></span>
+        </div>
+        <div class="columns-basemant">
+            <div class="navigation">
+                <a href="#about">О нас</a>
+                <a href="#hits">Хиты продаж</a>
+                <a href="#faq">Faq</a>
+                <a href="#contacts">Контакты</a>
+                <a href="">Актуальное на неделе</a>
+                <a href="">Подходят в рестораны</a>
+                <a href="">Готовые композиции</a>
+            </div>
+            <div class="socialnets">
+                <h1>Мы в соц сетях</h1>
+                <a href=""><img src="" alt=""></a>
+                <a href=""><img src="" alt=""></a>
+                <a href=""><img src="" alt=""></a>
+                <div class="phonenumber">
+                    <img src="" alt="">
+                    <h2>+375 29 650 5145</h2>
+                </div>
+                <div class="graficofwork">
+                    <h2>График работы</h2>
+                    <h2>9:00 - 21:00</h2>
+                </div>
+                <div class="search-in-basemant">
+                    <input type="text" placeholder="Найти цветок">
+                </div>
+                <div class="sub-basemant">
+                    <button>Оформить подписку</button>
+                </div>
+            </div>
+        </div>
+        <div class="official">
+            <p>© 2025 Анютин сад</p>
+            <p>Политика конфиденциальности</p>
+        </div>
+    </footer>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const dropdownBtn = document.getElementById('dropdownBtn');
+        const dropdownContent = document.getElementById('dropdownContent');
+        const dropdownText = document.querySelector('.dropdown-text');
+
+        if (dropdownBtn && dropdownContent) {
+            dropdownBtn.addEventListener('click', function(e) {
+                e.stopPropagation();
+                dropdownContent.classList.toggle('show');
+                dropdownBtn.classList.toggle('active');
+            });
+
+            // Закрытие при клике вне dropdown
+            document.addEventListener('click', function(e) {
+                if (!dropdownBtn.contains(e.target)) {
+                    dropdownContent.classList.remove('show');
+                    dropdownBtn.classList.remove('active');
+                }
+            });
+
+            // Выбор варианта
+            document.querySelectorAll('.dropdown-item').forEach(item => {
+                item.addEventListener('click', function() {
+                    const value = this.getAttribute('data-value');
+                    const text = this.textContent;
+                    
+                    dropdownText.textContent = text;
+                    dropdownContent.classList.remove('show');
+                    dropdownBtn.classList.remove('active');
+                    
+                    console.log('Выбран адрес:', value, text);
+                });
+            });
+        }
+    });
+    </script>
+    <script src="/js/cart.js"></script>
+    
+</body>
+</html>
