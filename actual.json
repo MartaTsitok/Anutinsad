@@ -1,0 +1,56 @@
+{
+  "Ромашки": {
+    "name": "Ромашки",
+    "image" : "/img/daisies.jpg",
+    "sizes": [
+      {"size": "S", "price": 20},
+      {"size": "M", "price": 30},
+      {"size": "L", "price": 50}
+    ]
+  },
+  "Фиолетовые": {
+    "name": "Фиолетовые",
+    "image" : "/img/purpule.jpg",
+    "sizes": [
+      {"size": "S", "price": 20},
+      {"size": "M", "price": 30},
+      {"size": "L", "price": 50}
+    ]
+  },
+  "Подсолнух": {
+    "name": "Подсолнух",
+    "image" : "/img/sunflower.jpg",
+    "sizes": [
+      {"size": "S", "price": 20},
+      {"size": "M", "price": 30},
+      {"size": "L", "price": 50}
+    ]
+  },
+  "Ораньжевый": {
+    "name": "Ораньжевые",
+    "image" : "/img/orange.jpg",
+    "sizes": [
+      {"size": "S", "price": 20},
+      {"size": "M", "price": 30},
+      {"size": "L", "price": 50}
+    ]
+  },
+  "Космос": {
+    "name": "Космос",
+    "image" : "/img/kosmos white.jpg",
+    "sizes": [
+      {"size": "S", "price": 20},
+      {"size": "M", "price": 30},
+      {"size": "L", "price": 50}
+    ]
+  },
+  "Красный": {
+    "name": "Красный зевс",
+    "image" : "/img/rad lion.jpg",
+    "sizes": [
+      {"size": "S", "price": 20},
+      {"size": "M", "price": 30},
+      {"size": "L", "price": 50}
+    ]
+  }
+}
