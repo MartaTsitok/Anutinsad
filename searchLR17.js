@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 const searchValue = this.value.trim();
                 
                 if (searchValue) {
-                    window.location.href = 'error/error.html';
+                    window.location.href = 'https://martatsitok.github.io/ann404/';
                 } else {
                     alert('Введите поисковый запрос');
                     this.focus();
@@ -19,4 +19,5 @@ document.addEventListener('DOMContentLoaded', function() {
     } else {
         console.error('Элемент .searchinput не найден!');
     }
+
 });
