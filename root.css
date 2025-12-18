@@ -96,7 +96,7 @@ h2 { font: var(--h2); }
 }
 
 .mainwindow img {
-    width: 1440px; 
+    width: 100%; 
     height: auto;
     position: absolute;
     top: 0;
@@ -652,4 +652,5 @@ h2 { font: var(--h2); }
     cursor: pointer;
     font-weight: bold;
     white-space: nowrap;
+
 }
